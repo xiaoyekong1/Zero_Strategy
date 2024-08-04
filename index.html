@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 浏览器标签上显示的网站标题 -->
+    <title>绝区零攻略站</title>
+    <!-- 网站介绍 -->
+    <meta name="description" content="绝区零攻略站是一个汇总攻略的地方，只收集不制作，如有侵权请联系">
+    <!-- 网站关键字 -->
+    <meta name="keywords" content="绝区零,攻略,绝区零攻略">
+    <!-- 浏览器标签上显示的图标 -->
+    <link rel="icon" type="image/ico" href="./ico.ico">
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.1">
+    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+
+    <!-- 自定义设置 -->
+    <style>
+        body {
+            /*背景图片URL 可使用随机图片API */
+            background-image: url("https://t.alcy.cc/ycy");
+        }
+
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("https://t.alcy.cc/lai");
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://api.injahow.cn/meting/?";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "10048327257"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = true; // 吸底模式
+        let music_volume = 0.1; // 默认音量
+        let music_autoplay = true; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        // TODO 一言设置
+    </script>
+    <!-- end 自定义设置 -->
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <!-- 大标题 -->
+                <h1>Zero Strategy</h1>
+                <!-- 标题下的一段话 -->
+                <p>
+                    绝区零攻略站是一个汇总攻略的地方，只收集不制作，如有侵权请联系
+                </p>
+                <p id="hitokoto_text">:D 一言获取中...</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- 导航按钮组 -->
+                        <button data-href=".\body\index.html" data-title="进入" data-window="newtab" data-anim="6"
+                            data-area-w="100%" data-area-h="100%" data-shade="false"
+                            class="kz-nav-btn btn btn-primary col-lg-4">进入</button>
+
+                        <button data-href="https://qm.qq.com/q/pj73otj9Uk" data-title="点击入群" data-window="newtab"
+                            data-anim="6" data-area-w="100%" data-area-h="100%" data-shade="false"
+                            class="kz-nav-btn btn btn-secondary col-lg-4">点击入群</button>
+
+         <!--               <button data-href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@kezez.com"
+         <!--                   data-title="Blog" data-window="pop" data-anim="4" data-area-w="80%" data-area-h="90%"
+         <!--                   data-shade="false" class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
+
+                        <!-- end 导航按钮组 -->
+                    </div>
+                </div>
+                <!-- aplayer inner -->
+                <div id="aplayer-inner" class="aplayer"></div>
+                <!-- end aplayer inner -->
+                <ul class="social mt-1">
+                    <li><a href="https://weibo.com/u/5223004318"><i class="fab fa-weibo " aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://github.com/kaygb"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.zhihu.com/people/kaygb/"><i class="fab fa-zhihu"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+
+                <footer>
+                    <p>Copyright 2024 - Now <a href="./index.html" target="_blank">YoZora</a>
+                        <a href="./index.html" target="_blank">3234076835</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- aplayer -->
+    <div id="aplayer-fixed" class="aplayer"></div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
+    <script src="./static/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+
+    <script src="./static/main.js"></script>
+
+</html>
